@@ -1,0 +1,126 @@
+//<!--BLOCK-3-4 start -->
+.block-3, .block-4 {
+  min-height: 550px;
+  padding: 40px 0;
+
+}
+
+.block-3-text-large-left, .block-3-text-small-left, .block-3-text-small, .block-3-text-large {
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .block-3-text-large, .block-3-text-small {
+    text-align: left;
+  }
+  .block-3-text-large-left, .block-3-text-small-left {
+    text-align: right;
+  }
+}
+
+//<!--BLOCK-3-4 end About us-->
+//<!--BLOCK-5 start Our Services -->
+.block-5 {
+  background-image: url("../../assets/img/block-5-back.jpg");
+  min-height: 400px;
+
+
+  .block-5-avatar {
+    text-align: center;
+    padding: 40px 0;
+  }
+
+  .block-5-text {
+    @include text-decor($main-color, 36px, 300, 96x);
+    font-family: $font-family-sans-serif;
+    letter-spacing: 0.75px;
+    text-align: center;
+  }
+
+  .block-5-text-small {
+    @include text-decor($hover-color, 18px, 300, 96x);
+    font-family: $font-family-sans-serif;
+    opacity: 0.3;
+    letter-spacing: 0.75px;
+    text-align: center;
+  }
+}
+
+//<!--BLOCK-5 end -->
+//<!--BLOCK-6 start -->
+.block-6-text-large, .block-6-large, .block-7-large, .block-8-app {
+  @include text-decor($third-color, 3em, 400, 96px);
+  text-align: center;
+  color: #576671;
+  font-family: $main-family;
+  letter-spacing: 1.5px;
+}
+
+.block-6-small-text, .block-6-small, .block-7-small, .block-8-middle {
+  @include text-decor($third-color, 18px, 400, 46px);
+  font-family: $font-family-sans-serif;
+  letter-spacing: 0.45px;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .block-6-text-large, .block-6-small-text {
+    text-align: left;
+  }
+}
+
+//<!--BLOCK-7 start -->
+.gallery-1 {
+  cursor: pointer;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+//<!--BLOCK-7 end our team -->
+//<!--BLOCK-8 start  Pricing-->
+
+.block-8-m {
+  @include text-decor($third-color, 3em, 300, 60px);
+  font-family: $main-family;
+  letter-spacing: 1.5px;
+  text-align: left;
+}
+
+.block-8-app, .block-8-middle {
+  @include text-decor($third-color, 18px, 400, 36px);
+  font-family: $font-family-sans-serif;
+  letter-spacing: 0.45px;
+  text-align: center;
+}
+
+.block-8 {
+  background-color: $sixty-color;
+
+  .block-8-box-4 {
+    background-color: $main-color;
+  }
+}
+
+//<!--BLOCK-9 start  MAP-->
+.block-9 {
+  padding-top: 6rem;
+
+  .block-9-text-large {
+    @include text-decor($third-color, 3em, 400, 96px);
+    text-align: left;
+    color: #576671;
+    font-family: $main-family;
+    letter-spacing: 1.5px;
+  }
+
+  .block-9-text-small {
+    @include text-decor($third-color, 18px, 400, 46px);
+    font-family: $font-family-sans-serif;
+    letter-spacing: 0.45px;
+    text-align: left;
+  }
+}
+
+//<!--BLOCK-9 start  MAP-->

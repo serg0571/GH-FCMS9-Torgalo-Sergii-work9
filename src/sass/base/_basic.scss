@@ -1,0 +1,57 @@
+body {
+  min-height: 100vh
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+
+  list-style: none;
+}
+
+.container-my {
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.btn-heard {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.btn:hover {
+  background-color: $hover-color;
+  opacity: 0.8;
+}
+
+.btn-block-2 {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  //background-color: $hover-color;
+}
+
+.button-chang, .button-all, .button-footer {
+  border-radius: 25px;
+}
+
+.button-footer {
+  color: $second-color;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+.btn {
+  background-color: $hover-color;
+}
+
+.btn-block-8 {
+  text-align: center;
+  padding-top: 30px;
+}
