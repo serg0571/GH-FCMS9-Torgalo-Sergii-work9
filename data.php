@@ -51,27 +51,50 @@ return [
 
     /*photo////////////////*/
 
+
     'gallery' => [
         [
-            'url' => 'assets/img/ze-1.jpg',
-            'alt' => 'ze-1',
+            'url' => 'assets/img/avraam.jpg',
+            'alt' => 'avraam',
         ],
         [
-            'url' => 'assets/img/ze-1.jpg',
-            'alt' => 'ze-1',
+            'url' => 'assets/img/bGrem.jpg',
+            'alt' => 'grem',
         ],
         [
-            'url' => 'assets/img/ze-1.jpg',
-            'alt' => 'ze-1',
+            'url' => 'assets/img/chacNoris.jpg',
+            'alt' => 'noris',
         ],
         [
-            'url' => 'assets/img/ze-1.jpg',
-            'alt' => 'ze-1',
+            'url' => 'assets/img/genry.jpg',
+            'alt' => 'genry',
         ],
         [
-            'url' => 'assets/img/ze-1.jpg',
-            'alt' => 'ze-1',
+            'url' => 'assets/img/kenni.png',
+            'alt' => 'kenni',
         ],
-    ],
+        'galleryDown' => [
+            [
+                'url' => 'assets/img/korop.jpg',
+                'alt' => 'korop',
+            ],
+            [
+                'url' => 'assets/img/lincoln.jpg',
+                'alt' => 'lincoln',
+            ],
+            [
+                'url' => 'assets/img/nickVuchich.jpg',
+                'alt' => 'nickVuchich',
+            ],
+            [
+                'url' => 'assets/img/vashington.jpg',
+                'alt' => 'vashington',
+            ],
+            [
+                'url' => 'assets/img/vPavlic.jpg',
+                'alt' => 'vPavlic',
+            ],
+        ],
 
+    ],
 ];

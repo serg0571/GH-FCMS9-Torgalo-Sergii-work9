@@ -31,7 +31,7 @@
         </div>
         <!--buttons menu-->
         <nav class="navbar navbar-expand-lg navbar-light ">
-            <a class="navbar-brand button-chang" href="#" style="color:white">HOME</a>
+<!--            <a class="navbar-brand button-chang" href="#" style="color:white">HOME</a>-->
             <button class="navbar-toggler button-chang " type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -42,7 +42,7 @@
                     foreach ($data['mainMenu'] as $menuNavBar) {
                         ?>
                         <li class="nav-item active button-chang ">
-                            <a class="nav-link button-chang-text " href="<?php echo $menuNavBar['url'] ?>">
+                            <a class="nav-link button-chang-text " style="color:white" href="<?php echo $menuNavBar['url'] ?>">
                                 <?php echo $menuNavBar['title'] ?>
                             </a>
                         </li>
@@ -222,8 +222,6 @@
 
 </article>
 <div class="gallery">
-
-
     <div class=" text-center">
         <?php foreach ($data['gallery'] as $item) {
             ?>
@@ -233,9 +231,9 @@
         ?>
     </div>
     <div class=" text-center">
-        <?php foreach ($data['gallery'] as $item) {
+        <?php foreach ($data['galleryDown'] as $itemDown) {
             ?>
-            <img class="gallery-1" src="<?php echo $item['url'] ?>" alt="<?php echo $item['alt'] ?>">
+            <img class="gallery-1" src="<?php echo $itemDown['url'] ?>" alt="<?php echo $itemDown['alt'] ?>">
             <?php
         }
         ?>
