@@ -27,11 +27,14 @@
 <header class="menu">
     <nav class="menu-button">
         <div class="logo">
-            <a href="#"><img src="assets/img/Slice_12.png" alt="logo"></a>
+            <a href="#"><img src="
+            <?php
+                echo $data['siteLogo']
+                ?>" alt="logo"></a>
         </div>
         <!--buttons menu-->
         <nav class="navbar navbar-expand-lg navbar-light ">
-<!--            <a class="navbar-brand button-chang" href="#" style="color:white">HOME</a>-->
+            <!--            <a class="navbar-brand button-chang" href="#" style="color:white">HOME</a>-->
             <button class="navbar-toggler button-chang " type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -42,23 +45,15 @@
                     foreach ($data['mainMenu'] as $menuNavBar) {
                         ?>
                         <li class="nav-item active button-chang ">
-                            <a class="nav-link button-chang-text " style="color:white" href="<?php echo $menuNavBar['url'] ?>">
+                            <a class="nav-link button-chang-text " style="color:white"
+                               href="<?php echo $menuNavBar['url'] ?>">
                                 <?php echo $menuNavBar['title'] ?>
                             </a>
                         </li>
                         <?php
                     }
                     ?>
-                    <!--   <li class="nav-item active  button-chang">
-                           <a class="nav-link" href="#" style="color:white">WORK <span class="sr-only">(current)</span></a>
-                       </li>
-                       <li class="nav-item active  button-chang">
-                           <a class="nav-link" href="#" style="color:white">SERVICES <span class="sr-only">(current)</span></a>
-                       </li>
-                       <li class="nav-item active btn-all button-chang">
-                           <a class="nav-link " href="#" style="color:white">BLOG <span
-                                       class="sr-only">(current)</span></a>
-                       </li>-->
+
 
                 </ul>
             </div>
@@ -68,9 +63,23 @@
 
 
     <div class="header-text">
-        <h1>Alecto is simple PSD Template</h1>
-        <p class="header-text-small"> Nam varius accumsan elementum ali</p>
+        <?php
+        foreach ($data['mainSlider'] as $mainText) {
+        ?>
+        <h1>
+
+            <?php
+            echo $mainText['title']['main'];
+            echo $mainText['title']['second']
+            ?>
+        </h1>
+        <p class="header-text-small">   <?php
+
+            echo $mainText['description']
+            ?></p>
     </div>
+    <?php
+    } ?>
     <div class="btn-heard">
         <button type="button" class="btn btn-outline-secondary ">
             Learn more
@@ -78,12 +87,17 @@
     </div>
 </header>
 <!--header end-->
-<!--BLOCK-2 start -->
+<!--BLOCK-2 start  About us-->
 <section class="block-2  container">
-    <h2 class="block-2-lard">About us</h2>
+    <h2 class="block-2-lard">
+        <?php
+        echo $data['block-2']['mainText']
+        ?></h2>
     <p class="block-2-small">
-        Nam varius accumsan elementum. Aliquam fermentum eros in
-        suscipit scelerisque. </p>
+        <?php
+        echo $data['block-2']['text']
+        ?>
+    </p>
     <div class="row block-2-photo">
         <div class=" col ">
             <a href="#"><img src="assets/img/photo-1.png" alt=""></a>
@@ -238,10 +252,10 @@
 <article class="block-7">
     <div class="col-12">
         <h3 class="block-7-large">
-        <?php
-        echo $data['blockOurTeam'] ['mainText']
-        ?>
-</h3>
+            <?php
+            echo $data['blockOurTeam'] ['mainText']
+            ?>
+        </h3>
         <p class="block-7-small">
             <?php
             echo $data['blockOurTeam'] ['text']

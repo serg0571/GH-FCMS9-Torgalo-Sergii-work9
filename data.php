@@ -23,7 +23,7 @@ return [
             'url' => '#',
         ],
     ],
-    'siteLogo' => 'img/some.png',
+    'siteLogo' => 'assets/img/Slice_12.png',
     'mainSlider' => [
         [
             'title' => [
@@ -48,9 +48,13 @@ return [
             ],
         ],
     ],
-
-
-   /* <!--BLOCK-5 end avatar -->*/
+    /*<!--BLOCK-2 start  About us-->*/
+    'block-2' => [
+        'mainText' => 'About us',
+        'text' => ' Nam varius accumsan elementum. Aliquam fermentum eros in
+        suscipit scelerisque.',
+    ],
+    /* <!--BLOCK-5 end avatar -->*/
 
     /*<!--BLOCK-6 start Our Services -->*/
     'blockOurservices' => [
