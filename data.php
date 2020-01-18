@@ -49,10 +49,25 @@ return [
         ],
     ],
     /*<!--BLOCK-2 start  About us-->*/
-    'block-2' => [
+    'block_2' => [
         'mainText' => 'About us',
         'text' => ' Nam varius accumsan elementum. Aliquam fermentum eros in
         suscipit scelerisque.',
+    ],
+    /* <!--BLOCK-3-4 start About us -->*/
+    'block_3' => [
+
+        [
+            'url' => 'assets/img/teacher.png',
+            'alt' => 'volodya',
+],
+           [ 'mainText' => 'OUR TEACHER',
+            'text' => '  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Quisque elementum augue sed est porttitor, ac blandit nisl posuere.
+            Pellentesque hendrerit suscipit mi eu lobortis. Curabitur consectetur
+            enim id elementum accumsan.
+            Quisque metus purus, iaculis id tincidunt non, blandit quis sapien.',
+        ],
     ],
     /* <!--BLOCK-5 end avatar -->*/
 

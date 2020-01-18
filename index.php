@@ -2,8 +2,7 @@
 
 
 ?>
-сегодня <?php echo date('d.m.Y h:i');
-?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -91,11 +90,11 @@
 <section class="block-2  container">
     <h2 class="block-2-lard">
         <?php
-        echo $data['block-2']['mainText']
+        echo $data['block_2']['mainText']
         ?></h2>
     <p class="block-2-small">
         <?php
-        echo $data['block-2']['text']
+        echo $data['block_2']['text']
         ?>
     </p>
     <div class="row block-2-photo">
@@ -134,22 +133,23 @@
 <!--BLOCK-3-4 start About us -->
 <section class="block-3 row ">
     <div class="col-12 col-sm-6 photo-block-3-main ">
-        <img class="img-fluid" src="assets/img/teacher.png" alt="volodya">
+        <?php foreach ($data['block_3'] as $item) {
+        ?>
+        <img class="img-fluid" src="<?php echo $item['url'] ?>" alt="<?php echo $item['alt'] ?>">
     </div>
     <div class="col-12 col-sm-6 ">
-        <h3 class="block-3-text-large">OUR TEACHER</h3>
+        <h3 class="block-3-text-large"><?php echo $item['mainText'] ?></h3>
         <p class="block-3-text-small">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Quisque elementum augue sed est porttitor, ac blandit nisl posuere.
-            Pellentesque hendrerit suscipit mi eu lobortis. Curabitur consectetur
-            enim id elementum accumsan.
-            Quisque metus purus, iaculis id tincidunt non, blandit quis sapien.
-        </p>
+            <?php echo $item['text'] ?>
+        </p> <?php
+        }
+        ?>
         <div class="btn-block-2  ">
             <button type="button" class="btn btn-outline-secondary btn-all ">
                 Learn more
             </button>
         </div>
+
     </div>
 
 </section>
