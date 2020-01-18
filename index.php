@@ -174,38 +174,62 @@
 <!--BLOCK-6 start Our Services -->
 <section class="block-6 row container-my">
     <div class="col-12">
-        <h3 class="block-6-large  ">Our Services</h3>
+        <h3 class="block-6-large  ">  <?php
+            echo $data['blockOurservices'] ['mainText']
+            ?></h3>
         <p class="block-6-small">
-            Nam varius accumsan elementum.
-            Aliquam fermentum eros in suscipit scelerisque.
+            <?php
+            echo $data['blockOurservices'] ['text']
+            ?>
+        </p>
+    </div>
+
+    <div class="col-12 col-sm-6">
+        <h3 class="block-6-text-large">
+            <?php
+            echo $data['blockOurservices'] ['mainText1']
+            ?>
+        </h3>
+        <p class="block-6-small-text">
+            <?php
+            echo $data['blockOurservices'] ['text1']
+            ?>
         </p>
     </div>
     <div class="col-12 col-sm-6">
-        <h3 class="block-6-text-large">Portfolio</h3>
+        <h3 class="block-6-text-large">
+            <?php
+            echo $data['blockOurservices'] ['mainText2']
+            ?>
+        </h3>
         <p class="block-6-small-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Quisque elementum augue sed est porttitor, ac blandit nisl posuere.
+            <?php
+            echo $data['blockOurservices'] ['text2']
+            ?>
         </p>
     </div>
     <div class="col-12 col-sm-6">
-        <h3 class="block-6-text-large">Design</h3>
+        <h3 class="block-6-text-large">
+            <?php
+            echo $data['blockOurservices'] ['mainText3']
+            ?>
+        </h3>
         <p class="block-6-small-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Quisque elementum augue sed est porttitor, ac blandit nisl posuere.
+            <?php
+            echo $data['blockOurservices'] ['text3']
+            ?>
         </p>
     </div>
     <div class="col-12 col-sm-6">
-        <h3 class="block-6-text-large">Branding</h3>
+        <h3 class="block-6-text-large">
+            <?php
+            echo $data['blockOurservices'] ['mainText4']
+            ?>
+        </h3>
         <p class="block-6-small-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Quisque elementum augue sed est porttitor, ac blandit nisl posuere.
-        </p>
-    </div>
-    <div class="col-12 col-sm-6">
-        <h3 class="block-6-text-large">Development</h3>
-        <p class="block-6-small-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Quisque elementum augue sed est porttitor, ac blandit nisl posuere.
+            <?php
+            echo $data['blockOurservices'] ['text4']
+            ?>
         </p>
     </div>
     <!--BLOCK-6 end Our Services-->
@@ -213,16 +237,21 @@
 </section>
 <article class="block-7">
     <div class="col-12">
-        <h3 class="block-7-large ">Meet our team</h3>
+        <h3 class="block-7-large">
+        <?php
+        echo $data['blockOurTeam'] ['mainText']
+        ?>
+</h3>
         <p class="block-7-small">
-            Nam varius accumsan elementum. Aliquam fermentum eros
-            in suscipit scelerisque.
+            <?php
+            echo $data['blockOurTeam'] ['text']
+            ?>
         </p>
     </div>
 
 </article>
 <div class="gallery">
-    <div class=" text-center">
+    <div class=" text-center ">
         <?php foreach ($data['gallery'] as $item) {
             ?>
             <img class="gallery-1" src="<?php echo $item['url'] ?>" alt="<?php echo $item['alt'] ?>">
@@ -230,14 +259,7 @@
         }
         ?>
     </div>
-    <div class=" text-center">
-        <?php foreach ($data['galleryDown'] as $itemDown) {
-            ?>
-            <img class="gallery-1" src="<?php echo $itemDown['url'] ?>" alt="<?php echo $itemDown['alt'] ?>">
-            <?php
-        }
-        ?>
-    </div>
+
 </div>
 <!--BLOCK-7 end our team -->
 <!--BLOCK-8 start  Pricing-->

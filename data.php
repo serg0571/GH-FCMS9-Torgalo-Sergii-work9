@@ -49,8 +49,44 @@ return [
         ],
     ],
 
-    /*photo////////////////*/
 
+   /* <!--BLOCK-5 end avatar -->*/
+
+    /*<!--BLOCK-6 start Our Services -->*/
+    'blockOurservices' => [
+        'mainText' => 'Our Services',
+        'text' => ' Nam varius accumsan elementum.
+            Aliquam fermentum eros in suscipit
+             scelerisque.',
+        'mainText1' => 'Portfolio',
+        'text1' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               Quisque elementum augue sed est porttitor, ac blandit nisl posuere.',
+        'mainText2' => 'Design',
+        'text2' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               Quisque elementum augue sed est porttitor, ac blandit nisl posuere.',
+        'mainText3' => 'Branding',
+        'text3' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               Quisque elementum augue sed est porttitor, ac blandit nisl posuere.',
+        'mainText4' => 'Development',
+        'text4' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               Quisque elementum augue sed est porttitor, ac blandit nisl posuere.',
+    ],
+    /* 'ourservicesMenu' => [
+         [
+            'mainText1' => 'Portfolio',
+             'text1' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+             Quisque elementum augue sed est porttitor, ac blandit nisl posuere.',
+         ],
+     ],*/
+
+
+    /*<!--BLOCK-6 end Our Services-->*/
+    /*photo/gallery///////////////*/
+    'blockOurTeam' => [
+        'mainText' => 'Meet our team',
+        'text' => 'Nam varius accumsan elementum. Aliquam fermentum eros
+            in suscipit scelerisque.',
+    ],
 
     'gallery' => [
         [
@@ -73,28 +109,27 @@ return [
             'url' => 'assets/img/kenni.png',
             'alt' => 'kenni',
         ],
-        'galleryDown' => [
-            [
-                'url' => 'assets/img/korop.jpg',
-                'alt' => 'korop',
-            ],
-            [
-                'url' => 'assets/img/lincoln.jpg',
-                'alt' => 'lincoln',
-            ],
-            [
-                'url' => 'assets/img/nickVuchich.jpg',
-                'alt' => 'nickVuchich',
-            ],
-            [
-                'url' => 'assets/img/vashington.jpg',
-                'alt' => 'vashington',
-            ],
-            [
-                'url' => 'assets/img/vPavlic.jpg',
-                'alt' => 'vPavlic',
-            ],
+        [
+            'url' => 'assets/img/korop.jpg',
+            'alt' => 'korop',
         ],
-
+        [
+            'url' => 'assets/img/lincoln.jpg',
+            'alt' => 'lincoln',
+        ],
+        [
+            'url' => 'assets/img/nickVuchich.jpg',
+            'alt' => 'nickVuchich',
+        ],
+        [
+            'url' => 'assets/img/vashington.jpg',
+            'alt' => 'vashington',
+        ],
+        [
+            'url' => 'assets/img/vPavlic.jpg',
+            'alt' => 'vPavlic',
+        ],
     ],
+
+
 ];
